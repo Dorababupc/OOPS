@@ -34,5 +34,5 @@ int main(){
     //Here we may notice that when  we are trying to change the values inside r, then values inside a are also changing, because of the dynamic memory allocation done 
     //on a varible in class.
     
-    //So, this is just the work done by the compiler with going much into the depth of the copying,-shallow copy constructor.
+    //So, this is just the work done by the compiler without going much into the depth of the copying,-shallow copy constructor.
 }
