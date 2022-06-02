@@ -23,6 +23,7 @@ int main(){
     cout<<r.breadth<<endl;
     Rectangle a(r);
     cout<<a.breadth<<endl;
-    //NOTE: compiler automatically copies the constructor by default. This is called shallow constructor.Which just copies without taking care of dynamically allocated memory.
-    //This is also similar to what we write without taking care of the dynamic memory allocation.
+    //Here you may notice that i have used a copy constructor without defining the copy constructor in the class, this works well as the compiler itself created a 
+    //copy constuctor which just copies the contents of the other original object to the newly created one.
+    
 }
