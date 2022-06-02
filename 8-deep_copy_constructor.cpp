@@ -28,16 +28,16 @@ class Rectangle
 int main(){
     Rectangle r;
     Rectangle a(r);
-    
-    r.show_data();
-    a.show_data();
-    //so, if we don't write it in deep then ambiguity is created and wrong memory errors occurs.
-    //so, we need to deinfe a custom deep constructor to allocate copy of memory location in the heap section is involved.
-    cout<<endl;
-    cout<<endl;
     r.breadth[1]=0;
     r.show_data();
     a.show_data();
-    //so,here we have taken care of minute things so that no problem in the dynamically allocated memory location.
+    //so, if we don't write it in deep then same memory is referenced by variables of both the objects.
+    //so, we need to deinfe a custom  constructor deeply to take care of this memory creations in heap.
+    cout<<endl;
+    cout<<endl;
+    r.breadth[0]=10;
+    r.show_data();
+    a.show_data();
+    //so,here we have taken care of minute things using the constructor defined above. so that no problem in the dynamically allocated memory location.
     //This is called deep conpy constructor.
 }
