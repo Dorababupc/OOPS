@@ -30,5 +30,6 @@ int main(){
    complex a(1,5);
    complex b(5,6);
    complex c=a+b;
+    //that is similar to c=operator+(a,b);
    cout<<c.get()<<endl;
 }
